@@ -164,3 +164,49 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+with st.container():
+    
+    st.subheader("hola mundo")
+    st.title("introduccion")
+    st.write("esto es uin texto muy largo")
+    st.write("[Mas Información >](http://youtube.com/naujacgamer)")
+
+with st.container():
+    st.write("---")
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.header("mi objetivo")
+        st.write(
+            """texto 1
+            texto2
+            texto 3
+            mucho texto
+            """
+        )
+        st.write("[youtube >>](http://youtube.com/naujacgamer)")
+    with right_column:
+        st_lottie(lottie_coding,height=300, key="music")
+
+
+with st.container():
+    st.write("---")
+    st.header("algun texto aqui")
+    image_column, text_column = st.columns((1,2))
+    with image_column:
+        st.image(imagen_logo)
+    with text_column:
+        st.write(
+            """
+            Muchas veces, después de hacer un cálculo, 
+            queremos mostrar de forma sencilla algún resultado de tal forma que cualquiera lo pueda visualizar.
+            A veces, el resultado no es algo sencillo y queremos proporcionar herramientas para que otros puedan toquetear los datos y que vean actualizaciones de forma interactiva.
+            """
+        )
+        st.markdown("[mas informacion...](https://pybonacci.org/2020/02/20/haciendo-un-dashboard-con-streamlit-en-python/)")
+    """
+
+
+
